@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateCourse">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="700dp"
+                android:paddingLeft="30dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/textViewStudentData"
+                    android:layout_width="173dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="158dp"
+                    android:gravity="center"
+                    android:text="Create Course"
+                    android:textColorHighlight="#00613232"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif" />
+
+
+                <EditText
+                    android:id="@+id/txtCourseName"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/border"
+                    android:fontFamily="serif"
+                    android:hint="Course Name"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/txtCourseCode"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/border"
+                    android:fontFamily="serif"
+                    android:hint="Course Code"
+                    android:inputType="text" />
+
+
+                <Spinner
+                    android:id="@+id/spinnerMarks"
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/marks"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btnSaveCourse"
+                    android:layout_width="240dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Save Course" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

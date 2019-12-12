@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttendanceSummary"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Courses"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif" />
+
+    <Spinner
+        android:id="@+id/spinner_Courses"
+        android:layout_width="340dp"
+        android:layout_height="35dp"
+        android:background="@drawable/spinner_background"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:text="Clear"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="9dp"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/hscrll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <TableLayout
+                android:id="@+id/table_main"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="23dp"
+                android:layout_centerHorizontal="true"
+                android:stretchColumns="*"
+                >
+            </TableLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>
+
+
+
